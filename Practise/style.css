@@ -51,6 +51,13 @@ nav {
      display: flex;
      justify-content: center;
 }
+
+nav  {
+     position : fixed ;
+     top: 0;
+     left: 0;
+     right: 0;
+}
    
 ul {
      list-style: none;
