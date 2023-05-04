@@ -160,13 +160,17 @@ a:hover {
 }
 
 .container-2 {
-     display: flex;
+     display: grid;
      align-items: center;
+     text-align: center;
      justify-content: center;
-     overflow: auto;
+     overflow: hidden;
+     padding: 20px;
      margin-left : 30px;
      margin-right :30px;
 }
+
+
 
 .anchor i {
      font-size: 32px;
@@ -198,9 +202,35 @@ footer {
      margin: 0;
 }
 
-@media (max-width: 450px) {
+@media (max-width : 520px) {
+     .hide {
+          content: '';
+     }
+}
+
+@media (min-width: 450px) {
      .container-2 {
           display : grid;
+          padding: 15px;
+          grid-template-columns : repeat(2 , 1fr);
+     }
+
+     .anchor {
+          padding: 8px;
+     }
+}
+
+/* @media (max-width : 850px) {
+     .table {
+          height: 250px;
+          width: 700px;
+     }
+} */
+
+@media (min-width : 550px) {
+     .table {
+          height: 200px;
+          width: 400px;
      }
 }
 
@@ -209,6 +239,10 @@ footer {
 
      #Main-img {
           display : none;
+     }
+
+     h3 {
+          content : 'Please Rotate Phone';
      }
 
      h1,h3,hr,
