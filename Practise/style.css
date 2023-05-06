@@ -130,6 +130,7 @@ a:hover {
      display: flex;
      flex-direction :row-reverse;
      font-size : 10px;
+     padding: 2px;
      justify-self: center;
 }
 
@@ -233,13 +234,6 @@ footer {
           padding: 8px;
      }
 }
-
-/* @media (max-width : 850px) {
-     .table {
-          height: 250px;
-          width: 700px;
-     }
-} */
 
 @media (min-width : 550px) {
      .table {
