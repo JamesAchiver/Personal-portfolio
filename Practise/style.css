@@ -126,6 +126,13 @@ a:hover {
      cursor: default;
 }
 
+#f-version {
+     display: flex;
+     flex-direction :row-reverse;
+     font-size : 10px;
+     justify-self: center;
+}
+
 .table td {
      vertical-align: center;
      align-items: center;
@@ -253,7 +260,7 @@ footer {
      }
 
      h1,h3,hr,
-     h4,
+     h4, #f-version , nav ,
      h5,
      .table,
      #para-2 ,
