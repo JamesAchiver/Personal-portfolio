@@ -12,7 +12,7 @@ body {
 
 
 #Main-img {
-     margin: 80px 0px 10px 0;
+     margin: 50px 0px 10px 0;
      box-sizing: border-box;
      box-shadow: 0px 0px 1px 8px #FF731D;
      height: 250px;
@@ -29,7 +29,9 @@ h3{
 
 h4 {
      font-size: 20px;
-     margin: 20px 20px;
+     margin: 25px 20px;
+     padding: 5px;
+     text-align: center;
      color : #F9F5EB;
 }
 
@@ -46,11 +48,32 @@ h5{
 /* For Navigation Bar  */
 
 nav {
-     background-color: #333;
+     background-color: transparent;
+     backdrop-filter: blur(8px);
      height: 50px;
      display: flex;
      justify-content: center;
+     align-items: center;
 }
+
+/* Code for Home icon Active state */
+
+.icon-1 {
+     background-color : #EEE;
+     color: #333;
+     margin-left : 12px;
+}
+
+.nav-icon:active {
+     color : #77037B;
+}
+
+.icon-1::after {
+     font-weight: 900;
+     content : "  Home";
+     font-size : 20px;
+}
+
 
 nav  {
      position : fixed ;
@@ -73,7 +96,8 @@ li {
 a {
      color: white;
      text-decoration: none;
-     padding: 15px;
+     padding: 8px;
+     border-radius: 10px;
      display: block;
 }
    
@@ -85,9 +109,10 @@ a:hover {
 /* END ----------------- */
 
 .table {
-     background-color : #513252;
-     color : #eee;
+     background-color : #eb1d35b2;
+     color : #EEE;
      font-size : 15px;
+     font-weight: bold;
      padding: 15px;
      border-collapse: separate;
      border : 1px solid #000 ;
@@ -262,5 +287,36 @@ footer {
      .anchor ,
      footer{
           display : none;
+     }
+}
+
+/* Media Query For 500px width  */
+@media (min-width : 500px) {
+     .nav-icon {
+          font-size : 34px ;
+     }
+
+     nav {
+          height: 70px;
+     }
+
+     #Main-img {
+          margin-top: 60px;
+          height: 350px;
+          width: 350px;
+
+     }
+
+     .icon-1 {
+          padding: 5px;
+          font-size: 32px;
+          font-weight: 900;
+          padding: 8px;
+     }
+
+     .table {
+          width: 450px;
+          height: 250px;
+          font-size : 20px
      }
 }
