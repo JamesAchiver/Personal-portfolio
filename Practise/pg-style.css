@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
 /* CSS Code for Page-2 */
 
 /* Code For  Overall Page */
 *{
      margin: 0;
+     font-family: "Montserrat" , sans-serif;
      padding: 0;
 }
 
@@ -11,17 +14,10 @@ body {
      color :#fff;
 }
 
-/* css Code for Container */
-
-.container {
-     height: 90px;;
-}
-
-/* CSS Code for nav */
-
 nav {
      background-color: rgba(0, 0,0,0.5);
-     backdrop-filter: blur(15px);
+     box-shadow: 0 0 10px 4px #5399;
+     backdrop-filter: blur(5px);
      height: 60px;
      position: fixed;
      top: 0;
@@ -32,6 +28,7 @@ nav {
      justify-content: center;
 }
 
+
 /* CSS Code for ul Tag  */
 
 ul {
@@ -41,6 +38,7 @@ ul {
      list-style: none;
      align-items: center;
 }
+
 
 /* CSS COde For list tag  */
 
@@ -58,7 +56,6 @@ a {
      align-content: center;
 }
 
-/* CSS Code For a hover  */
 
 .active-1:hover , .active-3:hover {
      padding: 8px;
@@ -82,6 +79,7 @@ a:active ,a:checked {
      /* padding: 3px; */
 }
 
+
 /* Css Code For Activation  */
 .active-2 {
      content : "About";
@@ -93,57 +91,49 @@ a:active ,a:checked {
      /* backdrop-filter: blur(5px); */
 } 
 
-/* CSS Code for image Container  */
 
-.container {
+.img-continer {
+     background-image: url('https://jamesachiver.github.io/Personal-portfolio/Practise/peakpx.jpg');
+     background-size: cover;
+     background-position: right center;
+
+     height: 300px;
      width: 100%;
-     height: 400px;
-     background-position: center;
-     background-size : cover;
-     background-image: url('https://jamesachiver.github.io/Personal-portfolio/Practise/BG-img.jpg');
 }
 
-/* CSS MEdia Query for 500px */
-
-@media (min-width : 500px) {
-     .n-icon {
-          font-size : 34px;
-     }
-
-     #icon-3 {
-          font-size : 38px;
-     }
-
-     nav {
-          height: 80px;
-     }
+#h1-mid {
+     margin: 15px;
 }
 
 
-/* CSS Code for paragraph tag */
-
-.mid-pg2 {
-     margin: 150px 50px 50px 50px;
-     background-color : #4E31AA ;
-     padding: 10px;
-     border-radius: 10px;
-     text-align: center;
+.container-2 {
+     display: grid;
+     text-align: justify;
+     margin: 20px;
 }
-
-/* CSS code for Footer  */
 
 footer {
-     height: 50px;
-     background-color: #282A3A ;
-     color : #FFF ;
+     text-align: center;
      padding: 18px;
      margin-top: 40px;
-     text-align: center;
+     color : #eee;
+     background-color : #282A3A;
 }
 
-/* CSS Code for version area */
 #f-version {
      display: flex;
-     flex-direction: row-reverse;
+     flex-direction :row-reverse;
+     font-size : 10px;
+     padding: 2px;
+     justify-self: center;
 }
 
+.mid-pg2 {
+     margin: 25px;
+     margin-left: 50px;
+     margin-top: 70px;
+     padding: 10px;
+     background-color : #e02d2d;
+     border-radius: 5px;
+     text-align: center;
+}
