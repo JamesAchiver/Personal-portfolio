@@ -93,7 +93,8 @@ a:active ,a:checked {
 
 
 .img-continer {
-     background-image: url('https://jamesachiver.github.io/Personal-portfolio/Practise/peakpx.jpg');
+     /* check */
+     background-image: url('https://jamesachiver.github.io/Personal-portfolio/Practise/Images/peakpx.jpg');
      background-size: cover;
      background-position: right center;
 
