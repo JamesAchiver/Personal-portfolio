@@ -97,7 +97,7 @@ a:active ,a:checked {
      background-image: url('https://jamesachiver.github.io/Personal-portfolio/Practise/Images/peakpx.jpg');
      background-size: cover;
      background-position: right center;
-
+     margin-top: 60px;
      height: 300px;
      width: 100%;
 }
@@ -106,11 +106,16 @@ a:active ,a:checked {
      margin: 15px;
 }
 
+.h1-mid {
+     margin-top: 30px;
+     margin-left: 15px;
+}
+
 
 .container-2 {
      display: grid;
      text-align: justify;
-     margin: 20px;
+     margin: 25px;
 }
 
 footer {
@@ -137,4 +142,8 @@ footer {
      background-color : #e02d2d;
      border-radius: 5px;
      text-align: center;
+}
+
+.para-1 {
+     margin-top: 10px;
 }
