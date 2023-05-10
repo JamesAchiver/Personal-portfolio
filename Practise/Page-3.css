@@ -36,7 +36,7 @@ ul {
 }
 
 li {
-     margin: 0 12px;
+     margin: 0 6px;
 }
 
 a {
@@ -132,7 +132,7 @@ li i {
 footer {
      text-align: center;
      padding: 18px;
-     margin-top: 40px;
+     margin-top: 150px;
      color : #eee;
      background-color : #282A3A;
 }
