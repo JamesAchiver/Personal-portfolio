@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+
+*{
+     margin: 0;
+     padding: 0;
+     font-family: "Montserrat" , sans-serif;
+}
+
+body {
+     background-color : #100F0F;
+     color : #FFF;
+}
+
+nav {
+     background-color : rgba(0,0,0,0.5);
+     backdrop-filter: blur(5px);
+     box-shadow: 0 0 6px 2px #ECA869 ;
+     width: 100%;
+     height: 60px;
+     position : fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     display: flex;
+     align-items : center;
+     justify-content : center;
+}
+
+ul {
+     margin: 0;
+     padding: 0;
+     display : flex;
+     list-style : none ;
+     align-items: center;
+}
+
+li {
+     margin: 0 12px;
+}
+
+a {
+     text-decoration: none;
+     padding: 5px;
+     display :block ;
+     margin: 5px;
+     color : #fff;
+}
+
+li i {
+     color : #EEE;
+     /* font-size : 24px; */
+}
+
+.nav-icon {
+     font-size : 24px;
+}
+
+.active-1:hover , .active-2:hover {
+     padding: 8px;
+     background-color : #4e0a75ee;
+     box-shadow: 0 0 4px 6px #1f1e1ea4;
+     border-radius: 10px ;
+     backdrop-filter: blur(5px);
+}
+
+.active-3 {
+     padding-top: 8px;
+}
+
+.active-3{
+     background-color : #eee;
+     color  : #333;
+     box-shadow: 0 0 4px 5px #1f1e1ea4 ;
+     border-radius: 10px;
+     padding: 8px;
+}
+
+.active-3::after {
+     content: " Projects";
+     background-color: #eee;
+     color : #333;
+     font-weight: 900;
+     border-radius: 10px;
+     font-size: 20px;
+     padding-left: 5px;
+     padding-right: 2px;
+     padding-bottom: 2px;
+     text-align: center;
+     align-items: right;
+}
+
+
+@Media (min-width : 500px) {
+     .nav-icon {
+          font-size : 34px;
+     }
+
+     nav {
+          height: 75px;
+     }
+
+     .active-3::after{
+          align-items: center;
+          font-size : 27px;
+     }
+ 
+}
+
+
+#temp-1 {
+     margin-top: 15px;
+}
+
+#temp-2 {
+     margin-top: 5px;
+}
+
+#temp-img {
+     margin-top: 150px;
+     height: 200px;
+     width: 200px;
+     border-radius: 15px;
+     background-color : rgba(0,0,0,0.5);
+}
+
+*::selection {
+     background-color : #FF0000;
+     color : #eee;
+}
+
+footer {
+     text-align: center;
+     padding: 18px;
+     margin-top: 40px;
+     color : #eee;
+     background-color : #282A3A;
+}
+
+#f-version {
+     display: flex;
+     flex-direction :row-reverse;
+     font-size : 10px;
+     padding: 2px;
+     justify-self: center;
+}
