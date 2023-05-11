@@ -127,6 +127,10 @@ a:active ,a:checked {
 
 footer {
      text-align: center;
+     position :  relative;
+     left :0 ; 
+     right :0 ; 
+     bottom :0 ; 
      padding: 18px;
      margin-top: 40px;
      color : #eee;

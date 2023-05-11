@@ -231,6 +231,10 @@ a:hover {
 
 footer {
      text-align: center;
+     position : relative;
+     left  : 0;
+     top  : 0;
+     bottom  : 0;
      padding: 18px;
      margin-top: 40px;
      color : #eee;
