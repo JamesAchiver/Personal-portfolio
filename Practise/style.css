@@ -27,6 +27,13 @@ h3{
      font-size: 35px;
 }
 
+#typed-text {
+     font-weight: 900;
+     margin: 25px 20px;
+     color : #eee;
+     font-size: 35px;
+}
+
 h4 {
      font-size: 20px;
      margin: 15px 20px;
