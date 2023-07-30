@@ -102,8 +102,9 @@ li i {
      }
 
      .active-3::after{
-          align-items: center;
-          font-size : 27px;
+          margin-top : auto;
+          margin-bottom : auto;
+          font-size : 30px;
      }
  
 }
@@ -187,8 +188,12 @@ footer {
      }
 }
 
-@media (min-width : 300px) {
+@media (max-width : 320px) {
      .active-3::after {
-          font-size  : 16px;
+          font-size  : 0;
+     }
+
+     #temp-2 {
+          margin : 25px 25px auto 25px ;
      }
 }

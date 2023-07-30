@@ -196,7 +196,7 @@ footer {
      padding-top: 12px;
      border-radius: 10px;
      /* background-color : #0f0e0e; */
-     border-right : 1px solid #689af8;
+     border-right : 2px solid #689af8;
      border-left : 5px solid #689af8;
      border-bottom : 5px solid #689af8 ;
      max-width : 200px ;
@@ -206,11 +206,12 @@ footer {
 
 #CV-icon {
      margin-left: 80px;
+     color: #F7D060;
      font-size  : 24px;
 }
 
 #CV-icon:hover {
-     color : #F7D060;
+     color : #f7db60;
 }
 
 /* Overlay code */
