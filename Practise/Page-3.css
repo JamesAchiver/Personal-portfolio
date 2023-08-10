@@ -47,6 +47,12 @@ a {
      color : #fff;
 }
 
+.newdiv #project-1 {
+     color  : blue;
+     padding : 15px;
+     text-decoration : dotted;
+}
+
 li i {
      color : #EEE;
      /* font-size : 24px; */
@@ -115,7 +121,7 @@ li i {
 }
 
 #temp-2 {
-     margin-top: 5px;
+     margin-top: 20px;
 }
 
 #temp-img {
@@ -194,6 +200,13 @@ footer {
      }
 
      #temp-2 {
-          margin : 25px 25px auto 25px ;
+          margin : 40px 25px auto 25px ;
      }
+}
+
+
+/* Adding New Codes for Update 1.4.7 */
+
+.test-1 {
+     margin-top: 50px ;
 }
