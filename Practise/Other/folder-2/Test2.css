@@ -1,0 +1,130 @@
+/* styles.css */
+body {
+     margin: 0;
+     padding: 0;
+}
+
+/* Declaring my Own Font here  */
+@font-face {
+     font-family: 'MyFont';
+     src: url('/Practise/New Project/Fonts/Fust&Schoeffer-DurandusGotico-Antiqua118G.woff2') format('woff2'), /* Modern Browsers */
+         url('/Practise/New Project/Fonts/Fust&Schoeffer-DurandusGotico-Antiqua118G.woff') format('woff'); /* Older Browsers */
+}
+
+@font-face {
+     font-family: 'MyFont2';
+     src: url('/Practise/New Project/Fonts/font-2-.woff2') format('woff2'), /* Modern Browsers */
+         url('/Practise/New Project/Fonts/font-2.woff') format('woff'); /* Older Browsers */
+}
+ 
+.overlay {
+     display: none;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: #0D0D0D; /*Black color added */
+     justify-content: center;
+     align-items :center;
+
+     z-index: 999;
+}
+ 
+.overlay-content {
+     background-color: #0D0D0D;
+     padding: 20px;
+     text-align: center;
+}
+
+/* .con-1 {
+     display: flex;
+     justify-content: center; 
+     align-items: center; 
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+} */
+ 
+/* .loader {
+     --height-of-loader: 4px;
+     --loader-color: #fff;
+     width: 200px;
+     height: var(--height-of-loader);
+     border-radius: 30px;
+     background-color: black;
+     margin-top: 5px;
+     margin-bottom: 25px;
+     position: relative;
+}
+
+.loader::before {
+     content: "";
+     position: absolute;
+     background: var(--loader-color);
+     top: 0;
+     left: 0;
+     width: 0%;
+     height: 100%;
+     border-radius: 30px;
+     animation: moving 4s ease-in-out 3;
+     ;
+}
+
+@keyframes moving {
+     50% {
+       width: 100%;
+     }
+   
+     100% {
+       width: 0;
+       right: 0;
+       left: auto;
+     }
+} */
+
+.close-button {
+     background-color: transparent;
+     color: #B7AB98;
+     border: 2px solid #B7AB98;
+     padding: 3px 20px;
+     font-size: 30px;
+     border-radius: 1.5rem;
+     cursor: pointer;
+     align-items: baseline;
+     justify-content: center;
+     font-family: 'MyFont';
+     font-weight: 500;
+     margin-left: 10px;
+     margin-top: -20px;
+}
+
+#olh1txt {
+     margin-top: 0;
+     margin-bottom: 25px;
+     position: relative;
+     font-weight: 400;
+     font-family: 'MyFont';
+     top: -65px;
+     color : #B7AB98;
+}
+
+.close-button:hover {
+     background-color: #B7AB98;
+     color : black;
+}
+ 
+
+#oltext {
+     color: grey;
+     display: inline-block;
+}
+
+#gif-img {
+     height: 60px;
+     width: 60px;
+     position: relative;
+     top: -75px;
+}
