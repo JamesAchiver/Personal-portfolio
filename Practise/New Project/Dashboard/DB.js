@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const sideLinks = document.querySelectorAll('.sidebar-1 .side-menu-1 li a:not(.logout)');
 
 sideLinks.forEach(item => {
@@ -53,4 +54,61 @@ toggler.addEventListener('change', function () {
     } else {
         document.body.classList.remove('dark');
     }
+=======
+const sideLinks = document.querySelectorAll('.sidebar-1 .side-menu-1 li a:not(.logout)');
+
+sideLinks.forEach(item => {
+    const li = item.parentElement;
+    item.addEventListener('click', () => {
+        sideLinks.forEach(i => {
+            i.parentElement.classList.remove('active-1');
+        })
+        li.classList.add('active-1');
+    })
+});
+
+const menuBar = document.querySelector('.content-1 nav .bx.bx-menu');
+const sideBar = document.querySelector('.sidebar-1');
+
+menuBar.addEventListener('click', () => {
+    sideBar.classList.toggle('close');
+});
+
+const searchBtn = document.querySelector('.content-1 nav form .form-input-1 button');
+const searchBtnIcon = document.querySelector('.content-1 nav form .form-input-1 button .bx');
+const searchForm = document.querySelector('.content-1 nav form');
+
+searchBtn.addEventListener('click', function (e) {
+    if (window.innerWidth < 576) {
+        e.preventDefault;
+        searchForm.classList.toggle('show');
+        if (searchForm.classList.contains('show')) {
+            searchBtnIcon.classList.replace('bx-search', 'bx-x');
+        } else {
+            searchBtnIcon.classList.replace('bx-x', 'bx-search');
+        }
+    }
+});
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth < 768) {
+        sideBar.classList.add('close');
+    } else {
+        sideBar.classList.remove('close');
+    }
+    if (window.innerWidth > 576) {
+        searchBtnIcon.classList.replace('bx-x', 'bx-search');
+        searchForm.classList.remove('show');
+    }
+});
+
+const toggler = document.getElementById('theme-toggle-1');
+
+toggler.addEventListener('change', function () {
+    if (this.checked) {
+        document.body.classList.add('dark');
+    } else {
+        document.body.classList.remove('dark');
+    }
+>>>>>>> 6667eda (Updated -V 1.5.0)
 });
