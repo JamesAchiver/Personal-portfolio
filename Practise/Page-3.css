@@ -1,212 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
-
-
-*{
+/* Base Styles */
+* {
      margin: 0;
      padding: 0;
-     font-family: "Montserrat" , Sans-serif;
-}
-
-body {
-     background-color : #100F0F;
-     color : #FFF;
-}
-
-nav {
-     background-color : rgba(0,0,0,0.5);
-     backdrop-filter: blur(5px);
-     box-shadow: 0 0 6px 2px #ECA869 ;
-     width: 100%;
-     height: 60px;
-     position : fixed;
-     top: 0;
-     left: 0;
-     right: 0;
-     display: flex;
-     align-items : center;
-     justify-content : center;
-}
-
-ul {
-     margin: 0;
-     padding: 0;
-     display : flex;
-     list-style : none ;
-     align-items: center;
-}
-
-li {
-     margin: 0 6px;
-}
-
-a {
-     text-decoration: none;
-     padding: 5px;
-     display :block ;
-     margin: 5px;
-     color : #fff;
-}
-
-.newdiv #project-1 {
-     color  : #F7E987;
-     padding : 15px;
-     text-decoration : dotted;
-}
-
-li i {
-     color : #EEE;
-     /* font-size : 24px; */
-}
-
-.nav-icon {
-     font-size : 24px;
-}
-
-.active-1:hover , .active-2:hover {
-     padding: 8px;
-     background-color : #4e0a75ee;
-     box-shadow: 0 0 4px 6px #1f1e1ea4;
-     border-radius: 10px ;
-     backdrop-filter: blur(5px);
-}
-
-.active-3 {
-     padding-top: 8px;
-}
-
-.active-3{
-     background-color : #eee;
-     color  : #333;
-     box-shadow: 0 0 4px 5px #1f1e1ea4 ;
-     border-radius: 10px;
-     padding: 8px;
-}
-
-.active-3::after {
-     font-weight: 900;
-     text-transform: capitalize;
-     font-size: 20px;
-     content: " Projects";
-     background-color: #eee;
-     color : #333;
-     border-radius: 10px;
-     padding-left: 5px;
-     padding-right: 2px;
-     padding-bottom: 2px;
-     text-align: center;
-     align-items: right;
-}
-
-
-@Media (min-width : 500px) {
-     .nav-icon {
-          font-size : 34px;
-     }
-
-     nav {
-          height: 75px;
-     }
-
-     .active-3::after{
-          margin-top : auto;
-          margin-bottom : auto;
-          font-size : 30px;
-     }
+     box-sizing: border-box;
+     font-family: 'Roboto', sans-serif;
+ }
  
-}
-
-
-#temp-1 {
-     margin-top: 15px;
-}
-
-#temp-2 {
-     margin-top: 20px;
-}
-
-#temp-img {
-     margin-top: 150px;
-     height: 200px;
-     width: 200px;
-     border-radius: 15px;
-     background-color : rgba(0,0,0,0.5);
-}
-
-*::selection {
-     background-color : #FF0000;
-     color : #eee;
-}
-
-footer {
-     text-align: center;
-     position: relative;
-     left: 0;
-     right: 0;
-     margin-top: 500px;
-     bottom: 0;
-     padding: 18px;
-     color : #eee;
-     background-color : #282A3A;
-}
-
-#f-version {
-     display: flex;
-     flex-direction :row-reverse;
-     font-size : 10px;
-     padding: 2px;
-     justify-self: center;
-}
-
-
-#loader-overlay {
-     position: fixed;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background-color: rgba(0, 0, 0, 0.9);
-     z-index: 9999;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-}
-   
-.loader {
-     border: 4px solid #f1f1f1;
-     border-top: 4px solid #3498db;
-     border-radius: 50%;
-     width: 40px;
-     height: 40px;
-     animation: spin 1s linear infinite;
-}
-   
-@keyframes spin {
-     0% { transform: rotate(0deg); }
-     100% { transform: rotate(360deg); }
-}
-   
-   
-/* Doing Correction in page - 3  */
-
-@media (min-width : 312px) {
-     .active-3::after {
-          font-size  : 18px;
-     }
-}
-
-@media (max-width : 320px) {
-     .active-3::after {
-          font-size  : 0;
-     }
-
-     #temp-2 {
-          margin : 40px 25px auto 25px ;
-     }
-}
-
-
-/* Adding New Codes for Update 1.4.7 */
-
-.test-1 {
-     margin-top: 50px ;
-}
+ body {
+     background-color: #0d1b2a;
+     color: #e0e1dd;
+ }
+ 
+ /* Navbar */
+ .navbar {
+     background: rgba(27, 38, 59, 0.95);
+     padding: 1rem 0;
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .navbar-brand {
+     font-size: 1.8rem;
+     font-weight: 700;
+     color: #778da9 !important;
+     transition: color 0.3s;
+ }
+ 
+ .navbar-brand:hover {
+     color: #e0e1dd !important;
+ }
+ 
+ .nav-item {
+     margin: 0 10px;
+ }
+ 
+ .nav-link {
+     color: #ffffff !important;
+     font-weight: 400;
+     padding: 0.75rem 1.5rem !important;
+     transition: all 0.3s;
+ }
+ 
+ .nav-link:hover, .nav-link.active {
+     color: #415a77 !important;
+     background: #e0e1dd;
+     border-bottom: 2px solid #415a77;
+ }
+ 
+ .btn-nav-contact {
+     background: #415a77;
+     color: #fff !important;
+     padding: 0.5rem 1.5rem !important;
+     border-radius: 25px;
+ }
+ 
+ /* Services */
+ .services {
+     background: #0d1b2a;
+     padding-top: 100px;
+ }
+ 
+ .services .card {
+     transition: all 0.3s;
+ }
+ 
+ .services .card:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 10px 20px rgba(65, 90, 119, 0.3);
+ }
+ 
+ .services .btn-primary {
+     background: #415a77;
+     border: none;
+ }
+ 
+ .services .btn-primary:hover {
+     background: #778da9;
+ }
+ 
+ /* Contact */
+ .contact {
+     background: #f5f6f5;
+     color: #1b263b;
+ }
+ 
+ .contact .btn-primary {
+     background: #415a77;
+     border: none;
+ }
+ 
+ .contact .btn-primary:hover {
+     background: #778da9;
+ }
+ 
+ /* Footer */
+ footer {
+     background: #1b263b;
+ }

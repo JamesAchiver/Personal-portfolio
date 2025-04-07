@@ -1,89 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Yash_James-Portfolio</title>
-     <link rel="stylesheet" href="https://jamesachiver.github.io/Personal-portfolio/Practise/pg-style.css">
-     <link rel="icon" href="https://jamesachiver.github.io/Personal-portfolio/Practise/favicon_io/android-chrome-512x512.png">
-     <!-- check -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash James | About</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://jamesachiver.github.io/Personal-portfolio/Practise/pg-style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="https://jamesachiver.github.io/Personal-portfolio/Practise/favicon_io/android-chrome-512x512.png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://kit.fontawesome.com/07a6501610.css" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-     <div id="loader-overlay">
-          <div class="loader"></div>   
-     </div>
-
-     <div class="container">
-          <nav>
-               <ul>
-                    <li>
-                         <a href="https://jamesachiver.github.io/Personal-portfolio/Practise/Dashboard.html" class="icon-1">
-                              <i class="fa-solid fa-house n-icon active-1"></i>
-                         </a>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Yash James</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://jamesachiver.github.io/Personal-portfolio/Practise/Dashboard.html"><i class="fa-solid fa-home me-2"></i>Home</a>
                     </li>
-                    <li>
-                         <a class="icon-2" href="https://jamesachiver.github.io/Personal-portfolio/Practise/Page-2.html"  >
-                              <i class="fa-solid fa-address-card n-icon active-2" ></i>
-                         </a>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://jamesachiver.github.io/Personal-portfolio/Practise/Page-2.html"><i class="fa-solid fa-user me-2"></i>About</a>
                     </li>
-                    <li>
-                         <a href="https://jamesachiver.github.io/Personal-portfolio/Practise/Page-3.html" class="icon-3">
-                              <i class="fa-solid fa-pager n-icon active-3" ></i>
-                         </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://jamesachiver.github.io/Personal-portfolio/Practise/Page-3.html"><i class="fa-solid fa-briefcase me-2"></i>Services</a>
                     </li>
-               </ul>
-          </nav>
-          <div class="img-continer">
-          </div>
-          <div class="container-2">
-               <h1 id="h1-mid" class="h1-mid">About Me</h1>
-              <p id="para-mid-1" class="para-1">
-                    Hi 👋🏻 , I am the Developer of this Portfolio 
-                    I am a Intermediate Web-Developer.
-                    I have a Interest in Learning High Level
-                    Programing Languages. I believe in 
-                    Self-Learning, All of that I have Learned
-                    Is Through Online Courses and ReadingBooks and etc.
-                    I am Learning building Complex web application and various Front-end Projects. I have interest in learning  web Real-Time communication and in 3D.js. always seek new opportunities for cooperation on new projects.  
-               </p>
-               <h2 class="h1-mid">Personal Details</h2>
-               <p class="para-1">
-                    Course : Bachelor of Commerce <br>
-                    University : Delhi University <br>
-                    
-               </p>
-               <br>
-               <br>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-nav-contact" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-               <hr>
-               <h3 class="h1-mid">My Curriculum Vitae (CV) :</h3>
-               <center>
-                    <a href="https://drive.google.com/file/d/1E5rWpLwIZB2wU9-Zl-zLcwLVTGqVu8EE/view?usp=share_link" target="_blank" id="CV-btn"> GET CV 
-                         <i class="fa-regular fa-file-pdf" id="CV-icon"></i>
-                    </a>
-               </center>
-               <br>
-               <hr>
-               <br>
-               <h3 class="h1-mid">What Services I Provide..? </h3>
-               <p class="para-1">
-                    Hey!, I am Interested in Providing Website Development Services, Front-End Development Services and Webiste Maintenance. I am Good at Team work. Other minor services that I am Interested in are Content Creation, Video Editing, Research and Development, Graphic Designing, Virtual Assistance, Transscription.
-               </p>
-               
+    <!-- Hero Section -->
+    <section class="hero text-center py-5" style="background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1920');">
+        <div class="container">
+            <h1 class="display-4 fw-bold text-white">Meet Yash James</h1>
+            <p class="lead text-white">Commerce Enthusiast | Web Developer | Opportunity Seeker</p>
+            <a href="#contact" class="btn btn-primary btn-lg mt-3">Get in Touch</a>
+        </div>
+    </section>
 
-          </div> 
-          
-     </div>     
-     <p class="mid-pg2" >This Section is Under Development.</p>
+    <!-- Summary Section -->
+    <section class="summary py-5 bg-light" id="summary">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <img src="https://jamesachiver.github.io/Personal-portfolio/Practise/Images/Main-Photo-1.jpg" alt="Yash James Portrait" class="img-fluid rounded-circle shadow">
+                </div>
+                <div class="col-md-8">
+                    <h2 class="fw-bold mb-3">About Me</h2>
+                    <p class="text-muted">
+                        I’m Yash James, a 4th-semester B.Com student at Ramanujan College, University of Delhi, with a strong foundation in financial management and accounting. As a self-taught web developer, I’m passionate about merging commerce insights with technology to create impactful solutions.
+                    </p>
+                    <div class="contact-info mt-3">
+                        <p><i class="fa-solid fa-envelope me-2"></i>jamesyash007@gmail.com | <i class="fa-solid fa-phone me-2"></i>+91 8587007951</p>
+                        <p><i class="fa-solid fa-map-marker-alt me-2"></i>Delhi, India | <i class="fa-brands fa-linkedin me-2"></i><a href="https://linkedin.com/in/yash-james-821344261" target="_blank">LinkedIn</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Education Section -->
+    <section class="education py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4 text-white">Education</h2>
+            <div class="row justify-content-center g-4">
+                <div class="col-md-4">
+                    <div class="card bg-dark text-light border-0 shadow h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">B.Com (Programme)</h5>
+                            <p class="card-subtitle mb-2 text-muted">Ramanujan College, University of Delhi</p>
+                            <p>12/2023 - Present | Kalkaji, New Delhi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-light border-0 shadow h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">12th Grade - Commerce</h5>
+                            <p class="card-subtitle mb-2 text-muted">Vidya Memorial Sr. Sec. Public School</p>
+                            <p>06/2020 - 07/2022 | Uttam Nagar West, New Delhi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-light border-0 shadow h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">10th Grade</h5>
+                            <p class="card-subtitle mb-2 text-muted">Ramakrishna Senior Sec. School</p>
+                            <p>06/2017 - 07/2020 | Vikaspuri, New Delhi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-     <footer>
-          <p>Made by Yash James</p>
-          <p id="f-version"><em>Version - 1.4.6</em></p>
-     </footer>
+    <!-- Skills Section -->
+    <section class="skills py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4 text-white">Skills</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <h5 class="fw-bold text-primary mb-3">Hard Skills</h5>
+                    <div class="mb-3">
+                        <p>Microsoft Excel (Intermediate)</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <p>Microsoft PowerPoint (Expert)</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <p>Web Development (Intermediate)</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <p>Command Line Interface (Intermediate)</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <p>Google Sheets (Intermediate)</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <p>SQL (Basic)</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <p>Canva (Intermediate)</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="fw-bold text-primary mb-3">Soft Skills</h5>
+                    <ul class="list-unstyled skills-list">
+                        <li><i class="fa-solid fa-chart-line me-2 text-primary"></i>Data Analysis</li>
+                        <li><i class="fa-solid fa-lightbulb me-2 text-primary"></i>Decision Making</li>
+                        <li><i class="fa-solid fa-handshake me-2 text-primary"></i>Leadership</li>
+                        <li><i class="fa-solid fa-clock me-2 text-primary"></i>Time Management</li>
+                        <li><i class="fa-solid fa-brain me-2 text-primary"></i>Critical Thinking</li>
+                        <li><i class="fa-solid fa-tools me-2 text-primary"></i>Problem Solving</li>
+                        <li><i class="fa-solid fa-users me-2 text-primary"></i>Teamwork</li>
+                        <li><i class="fa-solid fa-tasks me-2 text-primary"></i>Multitasking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-     <script src="https://jamesachiver.github.io/Personal-portfolio/Practise/Js/page-2.js"></script>
-     <script src="https://kit.fontawesome.com/07a6501610.js" crossorigin="anonymous"></script>
+    <!-- Certifications & Projects -->
+    <section class="certifications py-5 bg-light" id="portfolio">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4">Certifications & Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <h5 class="fw-bold text-primary">Certifications</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fa-solid fa-certificate me-2"></i>Google Digital Marketing (Google, 2025)</li>
+                        <li><i class="fa-solid fa-certificate me-2"></i>Excel for Business (Coursera, 2025)</li>
+                        <li><i class="fa-solid fa-certificate me-2"></i>Introduction to SQL (DataCamp, Ongoing)</li>
+                        <li><i class="fa-solid fa-certificate me-2"></i>Basics of Financial Modeling (CFI, 2025)</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="fw-bold text-primary">Projects</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fa-solid fa-project-diagram me-2"></i><strong>Personal Portfolio</strong> (10/2022 - Present): <a href="Dashboard.html" target="_blank">View Here</a></li>
+                        <li><i class="fa-solid fa-project-diagram me-2"></i><strong>Equity Research Report</strong>: Analyzed Zomato’s IPO using ratio analysis.</li>
+                        <li><i class="fa-solid fa-project-diagram me-2"></i><strong>HRM Project</strong>: Designed an onboarding plan and HR policy.</li>
+                        <li><i class="fa-solid fa-project-diagram me-2"></i><strong>Sales Pitch Simulation</strong>: Created a SaaS product pitch deck.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages & Interests -->
+    <section class="extras py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <h5 class="fw-bold text-primary">Languages</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fa-solid fa-language me-2"></i>Hindi (Full Professional Proficiency)</li>
+                        <li><i class="fa-solid fa-language me-2"></i>English (Professional Working Proficiency)</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="fw-bold text-primary">Interests</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fa-solid fa-code me-2"></i>Programming</li>
+                        <li><i class="fa-solid fa-book me-2"></i>Reading Books</li>
+                        <li><i class="fa-solid fa-music me-2"></i>Music</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact py-5 bg-light" id="contact">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Let’s Connect</h2>
+            <p class="text-muted mb-4">Interested in collaborating? Reach out!</p>
+            <a href="mailto:jamesyash007@gmail.com" class="btn btn-primary btn-lg"><i class="fa-solid fa-envelope me-2"></i>Email Me</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>© 2025 Yash James | All Rights Reserved</p>
+        <p class="small">Designed & Developed with Passion</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://jamesachiver.github.io/Personal-portfolio/Practise/Js/page-2.js"></script>
 </body>
 </html>
